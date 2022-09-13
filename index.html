@@ -9,19 +9,19 @@
     <title>Professional Profile</title>
 </head>
 <body>
-    <header>
+    <header id="flexheader">
         <h1>Ivan Bonilla</h1>
         <img src="./assests/profile.JPG" alt="photo of Ivan Bonilla" /> 
         <nav class="text-right">
             <ul>
-                <li>About me</li>
-                <li>Work</li>
-                <li>Contact me</li>
+                <li class="navli"><a href="#navaboutme"></a>About me</li>
+                <li class="navli"><a href="#navwork"></a>Work</li>
+                <li class="navli"><a href="#navcontactme"></a>Contact me</li>
             </ul>
         </nav> 
     </header>
-    <main> 
-        <section> 
+    <main id="flex"> 
+        <section id="navaboutme"> 
             <h2>About me</h2>
             <p>
                 My name is Ivan Bonilla. I am currently a student and 
@@ -31,13 +31,23 @@
                 active and like working out and being in nature. 
             </p>
         </section>
-
-        <section> 
-            <h2>Work</h2>
+        
+        <section id="navwork"> 
+            <h3>Work</h3>
+              <article class="relative">
+                 <ul>
+                     <li>Code Refactor</li>
+                     <li>COMING SOON</li>
+                     <li>COMING SOON</li>
+                 </ul>
+              </article>
         </section>
 
-        <section> 
-            <h2>Contact me</h2>
+        <section id="navcontactme"> 
+            <h4>Contact me</h4>
+              <address> 
+                763-300-2933
+              </address>
         </section>
     </main>
     
