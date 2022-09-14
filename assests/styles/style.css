@@ -7,7 +7,8 @@
 /* css for the header of the page */
 #flexheader{
     display:flex;
-    background-color: black;
+    background-image:linear-gradient(
+        black, purple);
     color: white;
     padding: 10px;
     font-size: xx-large;
@@ -24,14 +25,23 @@
     /* border: 5px solid rgb(0, 0, 0); */
 } 
 
+.anchor {
+    display: inline;
+    text-shadow: 1px;
+    color: white;
+}
+
+
 .navli {
     display:inline;
     padding:0px 20px;
-    
+    list-style-type: none;
     /* outline: 5px solid grey;  */
-
 } 
 
+.navli:hover{
+    box-shadow: 0 5px 15px yellow;
+}
 .text-right{
     text-align: right;
     flex: 1 1 1;
@@ -44,6 +54,7 @@
     flex-direction: column;
     max-width: 600px;
     margin: 40px auto 0 auto;
+    justify-content: center;
     align-items: center;
     /* outline:1px solid red;  */
 }
@@ -59,12 +70,12 @@ section {
     max-width: 50%;
 }
 
-.section2{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
+.section2container {
+    display:flex;
+    flex-direction: column;
+    
 }
+
 
 h2 {
     text-align: center;
@@ -74,13 +85,16 @@ h2 {
     padding-bottom: 20px;
 }
 
+.bigimg{
+    width: 500px;
+    height: 300px;
+}
 .imgsection { 
-    
     width: 250px;
     height: 200px;
     outline: 1px solid black;
-    
 }
+
 body{
     background-color: lightgray;
 }
@@ -90,3 +104,15 @@ article {
     top: 0;
     left: 25px;
 }
+
+.hover:hover{
+    box-shadow: 0 5px 15px black;
+    opacity: 50%;
+}
+
+@media screen and (max-width: 768px) {
+     .section2{
+        flex-direction: column;
+     }
+}
+
