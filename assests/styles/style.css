@@ -1,68 +1,92 @@
 * / {
     box-sizing: border-box;
+}   
+    /* outline and border are so that i can see what 
+    im targeting in html */
     
-} 
 /* css for the header of the page */
 #flexheader{
     display:flex;
-    /* outline:1px solid red; */
-    
-}
-header,h1 {
     background-color: black;
     color: white;
     padding: 10px;
     font-size: xx-large;
-    display: block;
-    /* outline:1px solid red;  */
+    text-decoration: underline;
+    align-items: center;
+    justify-content: center;
+    /* outline:1px solid red; */
 }
 
- .imgheader {
+
+.imgheader {
     width: 100px;
     height: 100px;
-    margin-right: 100px;
     /* border: 5px solid rgb(0, 0, 0); */
 } 
 
 .navli {
     display:inline;
     padding:0px 20px;
-    position: relative;
-    top: 25px;
-    left: 50px;
-    outline: 5px solid grey; 
+    
+    /* outline: 5px solid grey;  */
 
 } 
 
- .text-right{
+.text-right{
     text-align: right;
+    flex: 1 1 1;
 }
 
 /* css for the about me section of the page */
 
- #container {
+#container {
     display:flex;
     flex-direction: column;
     max-width: 600px;
     margin: 40px auto 0 auto;
+    align-items: center;
     /* outline:1px solid red;  */
- }
-
-  section {
+}
+ 
+section {
     padding:20px;
     margin-bottom: 20px;
-    outline:1px solid red; 
- }
+    outline: thick double black; 
+    /* border-radius: 2rem; */
+}
 
- h2 {
-    text-align: center
- }
+.section1 {
+    max-width: 50%;
+}
 
- .imgsection { 
+.section2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+h2 {
+    text-align: center;
+    font-family: serif;
+    font-size: xx-large;
+    text-decoration: underline;
+    padding-bottom: 20px;
+}
+
+.imgsection { 
+    
     width: 250px;
     height: 200px;
- }
-
+    outline: 1px solid black;
+    
+}
 body{
     background-color: lightgray;
+}
+
+article {
+    position: relative;
+    top: 0;
+    left: 25px;
 }
