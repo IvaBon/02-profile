@@ -6,11 +6,11 @@ My resume webpage includes a header that has my name, picture, and navigation li
 
 ## Link 
 
-<a href="https://ivabon.github.io/01-code-refactor">link to website </a>
+<a href="https://ivabon.github.io/02-profile/">link to website </a>
 
 ## Screenshot 
 
-![Screenshot of website](assets/images/ivabon.github.io_01-code-refactor_%20(1).png)
+![screenshot of webpage](../../../Downloads/ivabon.github.io_02-profile_.png)
 
 
 
